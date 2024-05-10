@@ -13,3 +13,9 @@
 [submodule "ERC20/lib/openzeppelin-contracts"]
 	path = ERC20/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "NFTs/lib/openzeppelin-contracts"]
+	path = NFTs/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "NFTs/lib/foundry-devops"]
+	path = NFTs/lib/foundry-devops
+	url = https://github.com/ChainAccelOrg/foundry-devops
