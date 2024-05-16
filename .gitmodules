@@ -19,3 +19,6 @@
 [submodule "NFTs/lib/foundry-devops"]
 	path = NFTs/lib/foundry-devops
 	url = https://github.com/ChainAccelOrg/foundry-devops
+[submodule "defi-stablecoin/lib/openzeppelin-contracts"]
+	path = defi-stablecoin/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts

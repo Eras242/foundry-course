@@ -1,9 +1,10 @@
 
 -include .env
 
-.PHONY: all test clean deploy fund help install snapshot format anvil 
+.PHONY: all test clean deploy fund help install snapshot format anvil deployMood mintMood
 
 DEFAULT_ANVIL_KEY := 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
+SEPOLIA_RPC_URL := =https://sepolia.infura.io/v3/62dc490feac442098dcb4fc1ecaa2dc0
 
 help:
 	@echo "Usage:"
@@ -45,3 +46,9 @@ deploy:
 
 mint:
 	@forge script ./script/Interactions.s.sol:MintBasicNFT $(NETWORK_ARGS)
+
+deployMood:
+	@forge script ./script/DeployMoodNFT.s.sol:DeployMoodNFT $(NETWORK_ARGS)
+
+mintMood:
+	cast send 0xa513E6E4b8f2a923D98304ec87F64353C4D5C853 "mintNFT()" --private-key $(DEFAULT_ANVIL_KEY)
